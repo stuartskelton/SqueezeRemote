@@ -204,7 +204,7 @@ sub getPlayerIds
         {
             my $pn =
               $self->pick_field( 3, $self->runcommand("player name $i ?") );
-            my $pid = $self->pick_field( 3, $self->runcommand('player id ?') );
+            my $pid = $self->pick_field( 3, $self->runcommand("player id $i ?") );
             if ( defined $pn && $pn ne '?' )
             {
                 push @players,
